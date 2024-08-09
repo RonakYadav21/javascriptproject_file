@@ -1,0 +1,48 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 30rem;
+    height: 30rem;
+    background-color: aliceblue;
+    
+}
+#item{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 0;
+    padding-left: 10px;
+    font-weight: 600;
+}
+#todolist{
+    list-style-type: none;
+    color:white;
+    user-select: none;
+}
+ul>li{
+    background-color: rgb(168, 76, 76);
+    font-size: 20px;
+    margin: 7px 0;
+padding-left: 10px;
+position: relative;
+}
+.fa{
+    position: absolute;
+    top:3px;
+    left: 450px;
+}
+.done{
+    text-decoration: line-through;
+    background-color:green !important;
+}

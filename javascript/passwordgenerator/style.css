@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: rgb(171, 191, 214);
+width: 100%;
+height: 100vh;
+}
+.container{
+    width: 20rem;
+    background-color: rgb(44, 147, 206);
+    border-radius: 10px;
+}
+.item{
+    margin:30px;
+}
+    .content{
+        display: flex;
+        float: left;
+        width: 70%;
+        margin: 5px;
+    }
+#pass{
+    display: block;
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 80%;
+    height: 25px;
+    margin:30px;
+    text-align: center;
+}
+#btn{
+    display: block;
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 80%;
+    margin:30px;
+    background-color: grey;
+    padding: 4px;
+
+}
+#len{
+    width: 30px;
+    height: 20px;
+
+}
+.d{
+    width: 90%;
+}

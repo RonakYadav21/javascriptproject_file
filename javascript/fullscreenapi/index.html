@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>get_location </title>
+</head>
+<body>
+    <h2>Fullscreen with JavaScript</h2>
+    <p>Click on the button to open the video in fullscreen mode.</p>
+    <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
+    <button onclick="closeFullscreen();">Close Fullscreen</button>
+
+ <!--
+    <p><strong>Tip:</strong> Press the "Esc" key to exit full screen.</p>
+-->
+    
+    <video width="80%" controls id="myvideo">
+      <source src="https://videos.pexels.com/video-files/2430774/2430774-sd_640_360_25fps.mp4" type="video/mp4">
+    
+      Your browser does not support the video tag.
+    </video>
+    
+    <script>
+    /* Get the element you want displayed in fullscreen */ 
+    var elem = document.getElementById("myvideo");
+    
+    /* Function to open fullscreen mode */
+    function openFullscreen() {
+      if (elem.requestFullscreen) { //Check if the browser supports the Fullscreen API
+        elem.requestFullscreen();  //Request fullscreen mode for the element
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    function closeFullscreen() {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) { /* Safari */
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { /* IE11 */
+          document.msExitFullscreen();
+        }
+      }
+      
+
+    </script>
+    
+</body>
+</html>
