@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>responsive navbar</title>
+    <style>
+.nav{
+    background-color:grey;
+    padding:1rem;
+}
+.nav-container{
+    height:50px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.nav-links{
+   display:flex;
+   justify-content: space-evenly; 
+   gap:1rem;
+}
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.bar{
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+
+}
+@media (max-width:768px){
+    .nav-links{
+    display:none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top:60px;
+    left:0;
+background-color:white;
+    }
+    
+    .nav-links.active{
+        display:flex;
+        font-size:20px;
+        overflow:hidden;
+    }
+    .toggle-button{
+        display:flex;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="logo"><img src="girl.png"></div>
+            <div class="nav-links" id="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">project</a>
+                <a href="#">contact</a>
+            </div>
+            <button class="toggle-button" id="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.faq-answer {
+    display: none; /* Answers are hidden by default */
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}

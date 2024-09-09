@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>Sidebar</title>
+    <body class="dark">
+  <nav class="sidebar" id="sidebar" class="close">
+   <header>
+  <div class="image-text">
+    <span class="image">
+    <img src="girl.png" alt="logo" class="girl"></span>
+    <div class="text header-text">
+        <span class="name">CodingLabs</span>
+        <span class="profession">Web Developer</span>
+    </div>
+  </div>
+  <i class='bx bxs-chevron-right toggle' id="toggle"></i>
+   </header>
+   <div class="menu-bar ">
+       <div class="menu">
+           <ul class="menu-links">
+            <div>
+                <li class="nav-links"><i class='bx bx-search icon'></i><input type="serach" placeholder="search" class="text"></li></div>
+                <div> <li class="nav-links"><a href="#"><i class='bx bx-home-alt icon'></i><span class="text">Dashboard</span></a></li></div>
+                <div><li class="nav-links"><a href="#"><i class='bx bxs-bar-chart-alt-2 icon'></i><span class="text">Revenue</span></a></li></div>
+                <div> <li class="nav-links"><a href="#"><i class='bx bx-bell icon'></i><span class="text">Notification</span></a></li></div>
+                <div> <li class="nav-links"><a href="#"><i class='bx bx-heart icon'></i><span class="text">likes</span></a></li></div>
+                <div> <li class="nav-links"><a href="#"><i class='bx bx-wallet icon'></i><span class="text">wallet</span></a></li></div>
+                <div class="bottom-content"><li class="nav-links"><a href="#"><i class='bx bx-log-out icon'></i><span class="text">logout</span></a></li>
+                <li class="nav-links">
+                <div><a href="#"><i class='bx bx-sun icon'></i>
+                </div>
+                <span class="text">Dark Mode</span></a>
+                <div class="toggle-switch">
+                <button class="switch" id="switch"></button>
+                </div>
+                 </li>
+            </div>
+        </ul>
+            
+        </div>
+    </div>
+    
+</nav>
+
+<script src="script.js"></script>
+    </body>
+    </html>
